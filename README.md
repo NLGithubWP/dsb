@@ -18,7 +18,9 @@ as the DSB benchmark does not comply with the TPC-DS benchmark
 
 ## Data generation
 - The data can be generated based on the instructions in ./code/v2.11.0rc2/tools/How_To_Guide-DS-V2.0.0.docx.
-- Because the DSB benchmark includes correlation between tables, the tables must be generated following a partial order. * We strongly suggest that the users generate ALL the tables when populating the data files *. Generating / repopulating an individual table file can result in incorrect correlation between tables.
+- Because the DSB benchmark includes correlation between tables, the tables must be generated following a partial order.
+    * We strongly suggest that the users generate ALL the tables when populating the data files
+    * Generating / repopulating an individual table file can result in incorrect correlation between tables.
 - Sample script to generate data files: ./scripts/generate_dsb_db_files.py
 - Sample script to load the data files to Microsoft SQL Server: ./scripts/load_data_sqlserver.py
 - Sample script to load the data files to Postgres: ./scripts/load_data_pg.py
